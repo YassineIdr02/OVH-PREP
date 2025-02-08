@@ -1,0 +1,4 @@
+Feb  6 23:30:08.870 [ERRO] [Test Reservation API] [Reserve-a-book] Step "http" result is "FAIL"
+Feb  6 23:30:08.870 [ERRO] [Test Reservation API] [Reserve-a-book] Errors: 
+Feb  6 23:30:08.870 [ERRO] [Test Reservation API] [Reserve-a-book] [33mTestcase "Reserve a book", step #0-0: Assertion "result.bodyjson.message ShouldContainSubstring \"Book reserved successfully\"" failed. expected 'Book reserved' to contain 'Book reserved successfully' but it wasn't (reserve_test.yml:0)[0m
+Feb  6 23:30:08.871 [WARN] [Test Reservation API] [Reserve-an-already-reserved-book] Step "http" result is "PASS"

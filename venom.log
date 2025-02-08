@@ -1,0 +1,6 @@
+Feb  6 23:17:06.155 [ERRO] [Test Reservation API] [Reserve-a-book] Step "http" result is "FAIL"
+Feb  6 23:17:06.155 [ERRO] [Test Reservation API] [Reserve-a-book] Errors: 
+Feb  6 23:17:06.155 [ERRO] [Test Reservation API] [Reserve-a-book] [33mTestcase "Reserve a book", step #0-0: Get "http://localhost:8080/books/reserve/1": dial tcp [::1]:8080: connect: connection refused (reserve_test.yml:0)[0m
+Feb  6 23:17:06.156 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] Step "http" result is "FAIL"
+Feb  6 23:17:06.156 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] Errors: 
+Feb  6 23:17:06.156 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] [33mTestcase "Reserve an already reserved book", step #0-0: Post "http://localhost:8080/books/1/reserve": dial tcp [::1]:8080: connect: connection refused (reserve_test.yml:0)[0m

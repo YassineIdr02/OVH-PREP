@@ -1,0 +1,22 @@
+name: "Test Reservation API"
+testcases:
+
+  - name: "Reserve a book"
+    steps:
+      - type: http
+        method: POST
+        url: "http://localhost:8080/books/reserve/1"
+        body: '{"reserver": "yassine"}'
+        assertions:
+          - result.statuscode ShouldEqual 200
+          - result.bodyjson.message ShouldContainSubstring "Book reserved"
+
+  - name: "Reserve an already reserved book"
+    steps:
+      - type: http
+        method: POST
+        url: "http://localhost:8080/books/reserve/1"
+        body: '{"reserver": "yassine"}'
+        assertions:
+          - result.statuscode ShouldEqual 409
+          - result.bodyjson.message ShouldContainSubstring "Book is already reserved"
