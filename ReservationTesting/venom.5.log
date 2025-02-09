@@ -1,7 +1,0 @@
-Feb  6 23:26:32.913 [ERRO] [Test Reservation API] [Reserve-a-book] Step "http" result is "FAIL"
-Feb  6 23:26:32.913 [ERRO] [Test Reservation API] [Reserve-a-book] Errors: 
-Feb  6 23:26:32.913 [ERRO] [Test Reservation API] [Reserve-a-book] [33mTestcase "Reserve a book", step #0-0: Assertion "result.bodyjson.message ShouldContainSubstring \"Book reserved successfully\"" failed. expected 'Book reserved' to contain 'Book reserved successfully' but it wasn't (reserve_test.yml:0)[0m
-Feb  6 23:26:32.915 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] Step "http" result is "FAIL"
-Feb  6 23:26:32.915 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] Errors: 
-Feb  6 23:26:32.915 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] [33mTestcase "Reserve an already reserved book", step #0-0: Assertion "result.statuscode ShouldEqual 409" failed. expected: 409  got: 404 (reserve_test.yml:0)[0m
-Feb  6 23:26:32.915 [ERRO] [Test Reservation API] [Reserve-an-already-reserved-book] [33mTestcase "Reserve an already reserved book", step #0-0: Assertion "result.bodyjson.message ShouldContainSubstring \"Book is already reserved\"" failed. expected 'Book not available' to contain 'Book is already reserved' but it wasn't (reserve_test.yml:0)[0m

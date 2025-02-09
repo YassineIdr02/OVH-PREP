@@ -1,5 +1,0 @@
-Feb  6 23:38:28.979 [ERRO] [Test Reservation API] [Reserve-a-book] Step "http" result is "FAIL"
-Feb  6 23:38:28.979 [ERRO] [Test Reservation API] [Reserve-a-book] Errors: 
-Feb  6 23:38:28.979 [ERRO] [Test Reservation API] [Reserve-a-book] [33mTestcase "Reserve a book", step #0-0: Assertion "result.statuscode ShouldEqual 200" failed. expected: 200  got: 409 (reserve_test.yml:0)[0m
-Feb  6 23:38:28.979 [ERRO] [Test Reservation API] [Reserve-a-book] [33mTestcase "Reserve a book", step #0-0: Assertion "result.bodyjson.message ShouldContainSubstring \"Book reserved\"" failed. expected 'Book is already reserved by you' to contain 'Book reserved' but it wasn't (reserve_test.yml:0)[0m
-Feb  6 23:38:28.981 [WARN] [Test Reservation API] [Reserve-an-already-reserved-book] Step "http" result is "PASS"
