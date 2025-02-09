@@ -5,7 +5,6 @@ import (
 	"github.com/YassineIdr02/ovh-prep/E2E-Tests/controllers"
 )
 
-// SetupRoutes sets up all API endpoints
 func SetupRoutes(router *gin.Engine) {
 	api := router.Group("/api")
 	{
