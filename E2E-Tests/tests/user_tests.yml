@@ -1,0 +1,25 @@
+name: User Registration and Login Tests
+tests:
+  - name: Test User Registration
+    request:
+      method: POST
+      url: "http://localhost:8080/api/register"
+      body:
+        username: "testuser"
+        password: "securepassword"
+    expected:
+      status: 200
+      body:
+        contains: "successfully registered"
+
+  - name: Test User Login
+    request:
+      method: POST
+      url: "http://localhost:8080/api/login"
+      body:
+        username: "testuser"
+        password: "securepassword"
+    expected:
+      status: 200
+      body:
+        contains: "JWT"
